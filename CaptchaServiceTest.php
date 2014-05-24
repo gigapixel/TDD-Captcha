@@ -1,8 +1,15 @@
 <?php
+
 require_once "CaptchaService.php";
 
 class CaptchaServiceTest extends PHPUnit_Framework_TestCase
 {
+    public function test_getCaptcha_return_any()
+    {
+        $captchaService = new CaptchaService();
+        $this->assertInstanceOf('Captcha', $captchaService->getCaptcha());
+    }
+
     public function test_getCaptcha_return_1111()
     {
         $randomStub = $this->getMock('Random');
@@ -12,7 +19,7 @@ class CaptchaServiceTest extends PHPUnit_Framework_TestCase
 
         $captchaService = new CaptchaService();
         $captchaService->setRandom($randomStub);
-        $this->assertEquals(new Captcha(1,1,1,1), $captchaService->getCaptcha());
+        $this->assertEquals(new Captcha(1, 1, 1, 1), $captchaService->getCaptcha());
     }
 }
 

@@ -1,10 +1,16 @@
 <?php
+
 require_once 'Captcha.php';
 require_once 'Random.php';
 
 class CaptchaService
 {
     private $random;
+
+    public function __construct()
+    {
+        $this->random = new Random();
+    }
 
     public function setRandom($random)
     {
@@ -23,4 +29,5 @@ class CaptchaService
         return new Captcha($pattern, $leftOperand, $operator, $rightOperand);
     }
 }
+
 ?>
