@@ -17,4 +17,5 @@ class Random
         return rand(1, 3);
     }
 }
+
 ?>
