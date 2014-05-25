@@ -1,7 +1,5 @@
 <?php
 
-require_once "CaptchaService.php";
-
 class CaptchaServiceTest extends PHPUnit_Framework_TestCase
 {
     public function test_getCaptcha_return_any()

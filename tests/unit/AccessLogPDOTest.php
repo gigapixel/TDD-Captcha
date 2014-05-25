@@ -1,7 +1,5 @@
 <?php
 
-require_once "AccessLogPDO.php";
-
 class AccessLogPDOTest extends PHPUnit_Extensions_Database_TestCase
 {
     private $pdo;
