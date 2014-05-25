@@ -4,6 +4,6 @@
         "phpunit/dbunit": "1.3.0"
     },
     "autoload": {
-        "classmap": ["web/", "web/controllers/", "web/services/", "web/models/"]
+        "classmap": ["web/", "web/services/", "web/models/"]
     }
 }
