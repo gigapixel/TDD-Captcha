@@ -65,6 +65,17 @@ class Captcha
         return $this->mapOperator[$this->operator];
     }
 
+    public function toString()
+    {
+        $leftOperand = $this->getLeftOperand();
+        $rightOperand = $this->getRightOperand();
+        $operator = $this->getOperator();
+
+        $result =  $leftOperand . " " . $operator . " " . $rightOperand . " =";
+
+        return $result;
+    }
+
     public function getResult()
     {
         $result = '';
