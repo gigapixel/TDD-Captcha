@@ -1,11 +1,11 @@
-<phpunit colors="true">
+<phpunit colors="true" bootstrap="./vendor/autoload.php">
   <testsuites>
     <testsuite name="UnitTest">
       <directory>tests/unit</directory>
     </testsuite>
-    <testsuite name="WebTest">
+    <!--<testsuite name="WebTest">
       <directory>tests/web</directory>
-    </testsuite>
+    </testsuite>-->
   </testsuites>
   <filter>
     <blacklist>
